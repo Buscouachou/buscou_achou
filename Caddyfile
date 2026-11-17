@@ -1,0 +1,20 @@
+{$SITE_ADDRESS:localhost} {
+	encode gzip zstd
+
+	# API (FastAPI) e relay do Clerk (/api/__clerk) — mesma origem, sem CORS
+	handle /api/* {
+		reverse_proxy backend:8001
+	}
+
+	# Site (React) com fallback para rotas do React Router
+	handle {
+		root * /srv
+		try_files {path} /index.html
+		file_server
+	}
+
+	header {
+		X-Content-Type-Options nosniff
+		Referrer-Policy strict-origin-when-cross-origin
+	}
+}

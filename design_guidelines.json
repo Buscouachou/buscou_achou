@@ -1,0 +1,234 @@
+{
+  "theme": "light",
+  "project_overview": {
+    "name": "Buscou Achou - Jequié-BA",
+    "description": "Marketplace local (estilo iFood/Catálogo WhatsApp) de produtos e serviços em Jequié-BA. Foco em busca rápida, catálogo visual, confirmação de disponibilidade e conversão direta via WhatsApp sem fricção de checkout/carrinho.",
+    "locale": "pt-BR",
+    "currency": "BRL (R$)",
+    "app_type": "hybrid_fullstack marketplace (mobile-first web)",
+    "initial_branding": {
+      "logo_url_primary": "https://customer-assets-jt897jd0.emergentagent.net/job_4ff11f27-234e-4bd3-8bca-61a0acc0f196/artifacts/707e5060e72e4ee8_Logo01.png",
+      "logo_url_secondary": "https://customer-assets-jt897jd0.emergentagent.net/job_4ff11f27-234e-4bd3-8bca-61a0acc0f196/artifacts/53a485e658990a62_123.png",
+      "brand_name": "Buscou Achou",
+      "location_tag": "Jequié - BA",
+      "primary_color_default": "#0B5CA8",
+      "secondary_color_default": "#F5F0E6"
+    }
+  },
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#F8FAFC",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#475569"
+      },
+      {
+        "name": "panel",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#64748B"
+      },
+      {
+        "name": "header",
+        "kind": "solid",
+        "bg": "#0B5CA8",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#E0E7FF",
+        "roles": {
+          "link": "#F5F0E6",
+          "error": "#FCA5A5",
+          "success": "#86EFAC"
+        }
+      },
+      {
+        "name": "cream_highlight",
+        "kind": "solid",
+        "bg": "#F5F0E6",
+        "on_bg": "#0B5CA8",
+        "on_bg_muted": "#1E3A8A"
+      },
+      {
+        "name": "whatsapp_cta",
+        "kind": "solid",
+        "bg": "#25D366",
+        "on_bg": "#042F1A",
+        "on_bg_muted": "#064E2A"
+      },
+      {
+        "name": "card_badge_open",
+        "kind": "solid",
+        "bg": "#DCFCE7",
+        "on_bg": "#14532D",
+        "on_bg_muted": "#166534"
+      },
+      {
+        "name": "card_badge_closed",
+        "kind": "solid",
+        "bg": "#FEE2E2",
+        "on_bg": "#991B1B",
+        "on_bg_muted": "#B91C1C"
+      },
+      {
+        "name": "inverse",
+        "kind": "solid",
+        "bg": "#0F172A",
+        "on_bg": "#F8FAFC",
+        "on_bg_muted": "#94A3B8"
+      },
+      {
+        "name": "hero_banner",
+        "kind": "gradient",
+        "contrast_against": "#08335E",
+        "guarantee": "scrim: linear-gradient(135deg, rgba(11,92,168,0.92), rgba(8,51,94,0.96))",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#E2E8F0",
+        "roles": {
+          "link": "#FDE047",
+          "error": "#FCA5A5",
+          "success": "#86EFAC"
+        }
+      }
+    ],
+    "accent": "#0B5CA8",
+    "on_accent": "#FFFFFF",
+    "accent_hover": "#094A88",
+    "whatsapp_green": "#25D366",
+    "on_whatsapp": "#FFFFFF",
+    "rating_gold": "#EAB308",
+    "border_subtle": "#E2E8F0"
+  },
+  "typography": {
+    "font_family_heading": "Plus Jakarta Sans, sans-serif",
+    "font_family_sans": "Plus Jakarta Sans, sans-serif",
+    "font_source_import": "@fontsource-variable/plus-jakarta-sans",
+    "scale_px": {
+      "display": 52,
+      "h1": 40,
+      "h2": 30,
+      "h3": 22,
+      "body": 16,
+      "caption": 14
+    },
+    "rules": {
+      "headlines_tracking": "tracking-tight",
+      "labels_tracking": "tracking-wider uppercase text-xs font-semibold",
+      "body_line_height": "leading-relaxed"
+    }
+  },
+  "entry_surfaces": {
+    "/": "mobile-first marketplace hub with top location pill, sticky search bar, category chips bar, promo banner carousel, and dynamic store feed with WhatsApp quick-links",
+    "/login": "split branded authentication with Buscou Achou royal blue illustration panel on left, login form with phone/email and role switch on right",
+    "/signup": "split branded registration with vendor and customer tabs, verified badge perks, and simple form",
+    "/cadastro-empresa": "business onboarding application form with catalog preview mockup and WhatsApp direct channel guide",
+    "/painel-empresa": "high-density vendor portal with availability request inbox, product catalog manager, and WhatsApp click tracker",
+    "/admin": "super admin command center with dynamic branding customizer (name, logo, CSS primary/secondary color inputs), banner carousel manager, business approval queue, and review moderation"
+  },
+  "grids_and_layouts": {
+    "header_nav": "Sticky glassmorphism/solid bar (#0B5CA8) with Buscou Achou logo, Jequié-BA location badge with pin icon, global search trigger, and user account / vendor portal switch.",
+    "category_chips": "Horizontal scrollable pill container with clean icons (Alimentação, Supermercado, Farmácia, Serviços & Reparos, Moda, Pet Shop, Construção).",
+    "banner_carousel": "Aspect ratio 16:9 on mobile (3:1 on desktop) rounded-2xl overflow-hidden shadow-sm with custom admin banner management.",
+    "store_card_layout": "Bento grid (grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5). Each card features 16:9 cover image, store avatar logo, open/closed indicator, delivery time, minimum order note, rating score with review count, category badge, and instant 'Ver Cardápio / Catálogo' button.",
+    "product_catalog_grid": "Categorized sectioned list with 2-column mobile grid / 3-4 column desktop grid. Each product shows crisp photo, title, description snippet, availability badge ('Pronta Entrega' / 'Sob Encomenda'), formatted BRL price (R$ XX,XX), and 'Consultar Disponibilidade / Pedir no WhatsApp' button.",
+    "availability_modal": "Fast modal dialog for customer to select quantity/variant/notes and generate instant pre-filled WhatsApp message URL: `https://wa.me/55...&text=Olá! Vi no Buscou Achou o item [Produto] (R$ [Preço]). Tem disponível agora para entrega no bairro [Bairro]?`",
+    "admin_theme_customizer": "Live preview card demonstrating primary/secondary color changes stored in MongoDB and injected as `--brand-primary` and `--brand-secondary` CSS variables on `:root`."
+  },
+  "motion": {
+    "principles": "Frictionless, snappy micro-interactions mimicking native app feel (iFood/Rappi).",
+    "transitions": "transition-colors duration-150 ease-out, transform 0.2s ease-out",
+    "hover_lift": "hover:-translate-y-0.5 hover:shadow-md transition-all duration-200",
+    "toast_position": "bottom-right via sonner with richColors",
+    "tabs_animation": "Smooth indicator slide between 'Cardápio / Produtos', 'Sobre a Loja', and 'Avaliações'."
+  },
+  "accessibility": {
+    "wcag_compliance": "AA level (4.5:1 contrast on all body text and form controls).",
+    "data_testids": "Mandatory data-testid on search input, category chips, store cards, WhatsApp CTA buttons, availability request forms, and admin config inputs.",
+    "reduced_motion": "Wrap non-essential spring animations in prefers-reduced-motion check.",
+    "phone_and_whatsapp_format": "Strict +55 (DD) 9XXXX-XXXX masks for Brazilian phone numbers."
+  },
+  "image_urls": {
+    "brand_logos": [
+      {
+        "url": "https://customer-assets-jt897jd0.emergentagent.net/job_4ff11f27-234e-4bd3-8bca-61a0acc0f196/artifacts/707e5060e72e4ee8_Logo01.png",
+        "description": "Buscou Achou primary logo with blue background and cream magnifier B mark",
+        "category": "branding"
+      },
+      {
+        "url": "https://customer-assets-jt897jd0.emergentagent.net/job_4ff11f27-234e-4bd3-8bca-61a0acc0f196/artifacts/53a485e658990a62_123.png",
+        "description": "Buscou Achou secondary wordmark / square avatar version",
+        "category": "branding"
+      }
+    ],
+    "restaurants_and_food": [
+      {
+        "url": "https://images.unsplash.com/photo-1583549322669-af8248a306c1?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Brazilian lunch dish with meat, rice, salad and fruit juices",
+        "category": "food_store"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1740377015729-a28abd02ee8c?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Buffet com comida baiana tradicional e churrasco",
+        "category": "food_store"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1593195862084-ee9977ce3fe5?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Restaurante e lanchonete movimentada em Jequié",
+        "category": "food_store"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1583549323543-7ae855a78d6d?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Padaria artesanal com pães e lanches",
+        "category": "bakery_store"
+      }
+    ],
+    "retail_and_services": [
+      {
+        "url": "https://images.unsplash.com/photo-1764955307141-056b240923a1?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Mercadinho e hortifruti local de bairro",
+        "category": "grocery_store"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1773946836315-bd8269b62b93?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Prateleiras de conveniência e farmácia com produtos organizados",
+        "category": "pharmacy_store"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1550041473-d296a3a8a18a?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Assistência técnica de smartphones e eletrônicos",
+        "category": "electronics_service"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1721332154191-ba5f1534266e?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Técnico consertando notebook e placas",
+        "category": "it_service"
+      }
+    ]
+  },
+  "component_path": {
+    "header": "@/components/Header.tsx",
+    "category_bar": "@/components/CategoryChips.tsx",
+    "banner_slider": "@/components/BannerCarousel.tsx",
+    "store_card": "@/components/StoreCard.tsx",
+    "product_card": "@/components/ProductCard.tsx",
+    "availability_dialog": "@/components/AvailabilityRequestModal.tsx",
+    "whatsapp_button": "@/components/WhatsAppDirectButton.tsx",
+    "store_reviews": "@/components/StoreReviews.tsx",
+    "admin_branding_panel": "@/components/admin/BrandingManager.tsx",
+    "admin_banners_panel": "@/components/admin/BannersManager.tsx",
+    "admin_moderation_panel": "@/components/admin/ReviewModerator.tsx",
+    "vendor_catalog_table": "@/components/vendor/CatalogManager.tsx",
+    "vendor_requests_inbox": "@/components/vendor/RequestsInbox.tsx"
+  },
+  "instructions_to_main_agent": [
+    "1. BRANDING & DYNAMIC THEME: In index.css and frontend state, create root CSS variables --brand-primary (default #0B5CA8) and --brand-secondary (default #F5F0E6). Fetch settings from /api/settings/branding and apply them dynamically so Super Admin color changes take effect immediately across all badges, header, and buttons.",
+    "2. LOGO ASSETS: Always use the provided logo URL (https://customer-assets-jt897jd0.emergentagent.net/job_4ff11f27-234e-4bd3-8bca-61a0acc0f196/artifacts/707e5060e72e4ee8_Logo01.png) in the header, footer, and login screens.",
+    "3. NO CHECKOUT OR PAYMENT: Do NOT build cart/checkout/stripe/pix gateway. The entire conversion flow is: Customer sees catalog -> clicks 'Consultar Disponibilidade' or 'Pedir pelo WhatsApp' -> opens formatted WhatsApp link with product details, price, and store phone number.",
+    "4. WHATSAPP LINK GENERATOR: Ensure all phone numbers are cleaned (digits only) and prefixed with 55 (Brazil country code). Pre-fill a polite Portuguese message mentioning 'Vi no Buscou Achou'.",
+    "5. LOCALIZATION (pt-BR): All dates (dd/MM/yyyy), prices (Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' })), and texts must be in natural Brazilian Portuguese for Jequié-BA (Bahia).",
+    "6. SEED DATA: Provide realistic Jequié businesses across various categories (e.g., 'Acarajé & Moqueca da Solange', 'Pizzaria Jequié Grill', 'Farmácia Cidade Sol', 'Silva Assistência Técnica Celulares', 'Hortifruti Mercado Central', 'Pet Shop Bicho Mimado') with full catalogs, photos, real prices, and sample reviews.",
+    "7. ROLES & AUTH: Implement customer (can review stores, save favorites, submit availability requests), business owner (manages their store catalog, hours, and requests inbox), and super admin (manages branding, banners, approves new business registrations, deletes inappropriate reviews).",
+    "8. TESTABILITY: Every interactive element must have a clear `data-testid` attribute (e.g. `data-testid='search-input'`, `data-testid='store-card-1'`, `data-testid='whatsapp-contact-btn'`, `data-testid='request-availability-btn'`)."
+  ]
+}
